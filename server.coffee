@@ -20,4 +20,4 @@ app.post '/unlock', (req,res)->
 app.get '/:resource(css|js|img)/:file', (req,res)->
 	res.sendfile req.params.resource + '/' + req.params.file
 
-app.listen 8080
+app.listen process.env.PORT || 8080 #for heroku
