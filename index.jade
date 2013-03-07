@@ -1,0 +1,43 @@
+!!! 5
+html
+	head
+		title Keypad
+		link(rel='stylesheet', href='css/bootstrap.min.css')
+		link(rel='stylesheet', href='css/styles.css')
+	body
+		.container
+			.row.key-input
+				.span6
+					form.key-form
+						input.input-medium.key-input
+						button.btn(type="submit") Submit
+			.clearfix
+			.row.key-keys
+				.span6
+					.btn-group
+						button.btn.btn-key 1
+						button.btn.btn-key 2
+						button.btn.btn-key 3
+					.clearfix
+					.btn-group
+						button.btn.btn-key 4
+						button.btn.btn-key 5
+						button.btn.btn-key 6
+					.clearfix
+					.btn-group
+						button.btn.btn-key 7
+						button.btn.btn-key 8
+						button.btn.btn-key 9
+					.clearfix
+					.btn-group
+						button.btn.btn-key #
+						button.btn.btn-enter Enter
+			.clearfix
+					.clearfix
+			.row.message
+				.span6
+					span.label.message-container
+			.clearfix
+
+		script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js')
+		script(src='js/script.js')
